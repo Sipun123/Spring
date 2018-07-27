@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="aId" class="com.beans.A">
+		<property name="b" ref="bId"></property>
+		<property name="c" ref="cid"></property>
+	</bean>
+
+
+	<bean id="bId" class="com.beans.B"></bean>
+	
+	<bean id="cid" class="com.beans.C">
+	<property name="d" ref="dId"></property>
+	</bean>
+	
+	<bean id="dId" class="com.beans.D"></bean>
+	
+</beans>
